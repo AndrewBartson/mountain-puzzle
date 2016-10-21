@@ -1,0 +1,46 @@
+#collage {
+    margin-left: 120px;
+}
+#sortable {
+    border:2px solid #00F;
+    list-style-type: none;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    width: 10008px;
+}
+#sortable li {
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 417px;
+    height: 404px;
+}
+#sidebar {
+    border:1px solid #F00;
+    margin: 0;
+    height: 100%;
+    position: fixed;
+    width: 118px;
+    background: beige;
+    z-index: 313;
+    text-align: center;
+}
+
+/* ======== styles ========= */
+
+body {
+    font-family: 'Segoe UI', Calibri, Arial;
+    margin:0;
+}
+h2{
+    font-weight:normal;
+    text-align:center;
+}
+h3{
+    font-weight:normal;
+    margin:3px 0px;
+    text-align:center;
+}

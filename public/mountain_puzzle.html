@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Mountain Puzzle</title>
+    <link href="stylesheets/mountain_puzzle.css" rel="stylesheet" />
+    <script src="javascripts/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/jquery-ui.js"></script>
+    <script src="javascripts/mountain_puzzle.js"></script>
+</head>
+<body>
+
+<div id="sidebar">
+    <h2>Geo-Quiz</h2>
+    <p><h3>Alderpoint<br/>to<br/>
+    Forest Glen<br/>to<br/>
+    Black Rock Lake</h3></p><hr/>
+    <p>Mix up the map<br/>then<br/>drag-and-drop<br/>to put it back together.</p><hr/><br/>
+    <form>
+        <div class="center_button">
+            <input type="button" value="Mix it up" onclick="mountainPuzzle.startGame(true);">
+        </div><br>
+        <div>
+            <input type="button" value="Zoom max" onclick="mountainPuzzle.setSize(1);">
+        </div><br>
+        <div>
+            <input type="button" value="Zoom med" onclick="mountainPuzzle.setSize(2);">
+        </div><br>
+        <div>
+            <input type="button" value="Zoom out" onclick="mountainPuzzle.setSize(3);">
+        </div><br/>
+
+    <div id="score_board">
+        <div id="msg">Game in progress</div>
+        <p>Number of moves - <span class="stepCount"></span></p>
+    </div>
+        <div>
+            <input type="button" value="Start new game" onclick="mountainPuzzle.startGame(false, 1);">
+        </div><br>
+        <div>
+            <input type="button" value="Save workspace" onclick="">
+        </div><br>
+    </form>
+</div> <!-- end sidebar -->
+
+<div id="container">
+    <div id="collage">
+        <ul id="sortable"></ul>
+        <script>
+                mountainPuzzle.startGame(false, 1);
+        </script>
+    </div> <!-- end collage -->
+</div> <!-- end container -->
+
+</body>
+</html>
