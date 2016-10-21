@@ -49,7 +49,7 @@ var mountainPuzzle = {
         var image = '' ;
         $('#sortable').empty();
         for (var i = 0; i < 312; i++) {
-            image = ('imgs/jj_' + i + '.jpeg');
+            image = ('images/jj_' + i + '.jpeg');
             var li = $('<li class="item" data-value="' + (i) + '"></li>').css({
                 'background-image': 'url(' + image + ')'//,
             });
